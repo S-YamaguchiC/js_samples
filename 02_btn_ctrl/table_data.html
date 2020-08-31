@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Button Control</title>
+    <script src="./disable_ctrl.js"></script>
+  </head>
+
+  <body onload="ctrlButtonStatus()">
+  <p>Account Status</p>
+  <form name="account" action="#">
+    <table border="1">
+      <th>No.</th>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Effect</th>
+      <th>Invalid</th>
+      <tr>
+        <td>1</td>
+        <td>Z100</td>
+        <td>Alice</td>
+        <td>Effectiveness<input type="hidden" name="status" value="Effectiveness"></td>
+        <td><button type="button" name="effect" value="1">Effect</td>
+        <td><button type="button" name="invalid" value="2">Invalid</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Z101</td>
+        <td>Bob</td>
+        <td>Invalid<input type="hidden" name="status" value="Invalid"></td>
+        <td><button type="button" name="effect" value="1">Effect</td>
+        <td><button type="button" name="invalid" value="2">Invalid</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Z102</td>
+        <td>Chris</td>
+        <td>Invalid<input type="hidden" name="status" value="Invalid"></td>
+        <td><button type="button" name="effect" value="1">Effect</td>
+        <td><button type="button" name="invalid" value="2">Invalid</td>
+      </tr>
+    </table>
+  </form>
+</body>
+
+</html>

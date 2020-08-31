@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>After Transition</title>
+  <script src="./store.js"></script>
+</head>
+
+<body onload="getStorageData();">
+  <header>
+    Recieved Data
+  </header>
+
+  <form name="datas">
+
+    <label for="to">To:</label>
+    <input type="text" id="to" name="to" size="50" value="" disabled><br>
+
+    <label for="cc">CC:</label>
+    <input type="text" id="" name="cc" size="50" value=""><br>
+
+    <label for="bcc">BCC:</label>
+    <input type="text" id="" name="bcc" size="50" value=""><br>
+
+    <label for="title">Title</label>
+    <input type="text" name="title" size="60" value=""><br>
+
+    <p for="msg">Message:</p>
+    <textarea name="msg" rows="8" cols="80"></textarea>
+
+    <input type="button" onclick="sendMail()" value="Send">
+  </form>
+
+  <br>
+  <a href="./list.html">back</a>
+</body>
+
+</html>

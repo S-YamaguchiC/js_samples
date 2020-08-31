@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>home</title>
+    <script src="./store.js"></script>
+  </head>
+  <body>
+    <header>
+      Sending Dataset
+    </header>
+
+    <table border=1>
+      <th>UserID</th>
+      <th>Name</th>
+      <th>E-mail</th>
+      <th>Action</th>
+      <tr>
+        <td>100<input type="hidden" name="id" value="100"></td>
+        <td>Alice<input type="hidden" name="name" value="Alice"></td>
+        <td>Alice@example.com<input type="hidden" name="e-mail" value="Alice@example.com"></td>
+        <td><button type="button" name="button" onclick="addDatas(0)">SendMail</button></td>
+      </tr>
+      <tr>
+        <td>101<input type="hidden" name="id" value="101"></td>
+        <td>Bob<input type="hidden" name="name" value="Bob"></td>
+        <td>Bob@example.com<input type="hidden" name="e-mail" value="Bob@example.com"></td>
+        <td><button type="button" name="button" onclick="addDatas(1)">SendMail</button></td>
+      </tr>
+      <tr>
+        <td>102<input type="hidden" name="id" value="102"></td>
+        <td>Chris<input type="hidden" name="name" value="Chris"></td>
+        <td>Chris@example.com<input type="hidden" name="e-mail" value="Chris@example.com"></td>
+        <td><button type="button" name="button" onclick="addDatas(2)">SendMail</button></td>
+      </tr>
+    </table>
+  </body>
+</html>
