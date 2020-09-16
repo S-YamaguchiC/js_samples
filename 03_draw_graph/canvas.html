@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="./draw.js"></script>
+    <script type="text/javascript" id="MathJax-script" asyncsrc="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  </head>
+  <body>
+    <div>
+      <p>比例定数を入れてグラフを表示するまーーーん</p>
+        <!-- 比例定数を入力するInput -->
+        <label for="A">比例定数a：</label>
+        <input type="number" id="val1" min="-5" max="5" value="0" oninput="getVal()">
+        <input type="button" value="リセット" onclick="location.reload(true)">
+        <br>
+        <p id="a1" name="formula">式：</p>
+
+        <!-- グラフ描画 (400x400)  -->
+        <svg width=400 height=400>
+          <!-- 中心線 -->
+          <line x1=0 y1=200 x2=400 y2=200 stroke="black" />
+          <line x1=200 y1=0 x2=200 y2=400 stroke="black" />
+          <!-- 横の罫線 offset+50 -->
+          <line x1=0 y1=0 x2=400 y2=0 stroke="grey" />
+          <line x1=0 y1=50 x2=400 y2=50 stroke="grey" />
+          <line x1=0 y1=100 x2=400 y2=100 stroke="grey" />
+          <line x1=0 y1=150 x2=400 y2=150 stroke="grey" />
+          <line x1=0 y1=250 x2=400 y2=250 stroke="grey" />
+          <line x1=0 y1=300 x2=400 y2=300 stroke="grey" />
+          <line x1=0 y1=350 x2=400 y2=350 stroke="grey" />
+          <line x1=0 y1=400 x2=400 y2=400 stroke="grey" />
+
+          <!-- 縦の罫線 offset+35 -->
+          <line x1=20  y1=0 x2=20  y2=400 stroke="grey" />
+          <line x1=65  y1=0 x2=65  y2=400 stroke="grey" />
+          <line x1=110 y1=0 x2=110 y2=400 stroke="grey" />
+          <line x1=155 y1=0 x2=155 y2=400 stroke="grey" />
+          <line x1=245 y1=0 x2=245 y2=400 stroke="grey" />
+          <line x1=290 y1=0 x2=290 y2=400 stroke="grey" />
+          <line x1=335 y1=0 x2=335 y2=400 stroke="grey" />
+          <line x1=380 y1=0 x2=380 y2=400 stroke="grey" />
+
+          <!-- 以下、Forループ100回-->
+          <g id="graph"></g>
+          <!---->
+        </svg>
+        <br>
+    </div>
+  </body>
+</html>
